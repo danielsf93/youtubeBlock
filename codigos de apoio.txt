@@ -1,0 +1,42 @@
+<?php
+
+
+tentei utilizar essa regra pra transformar links comuns em links embed, mas o settings.tpl nao aceitou:
+
+$link = "https://www.youtube.com/watch?v=meulink";
+$embend = "https://www.youtube.com/embed/";
+  $url_components = parse_url($link);
+  parse_str($url_components['query'], $query_components);
+  $video_id = $query_components['v'];
+$super = $embend . $video_id;
+echo $super
+
+por fim, depois de sofrer um bocado, a solução foi essa:
+
+  <iframe width={$width|unescape:"html"} 
+  height={$height|unescape:"html"} 
+  src={$link|unescape:"html"}
+  frameborder="0" allowfullscreen>
+  </iframe>
+
+Os tamanhos de vídeo ficaram com os padrões
+
+grande 360 x 202,5
+medio 300 x 168
+pequeno 240 x 135
+
+
+mas ainda é inserido manualmente
+
+:(
+
+
+
+
+
+
+
+
+
+
+?> 
