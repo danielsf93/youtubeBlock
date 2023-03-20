@@ -19,12 +19,12 @@ class youtubeBlock extends BlockPlugin {
 	}
 
 	public function getDisplayName() {
-		return __('youtube block');
+		return __('Youtube Block');
 	}
 
 
 	public function getDescription() {
-		return __('youtube Block');
+		return __('Adiciona um vídeo em formato Block do lado direito da página da revista. Para adicionar o vídeo, apoś instalar clique em configurações.');
 	}
 
   public function isSitePlugin() {

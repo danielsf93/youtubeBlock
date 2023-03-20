@@ -17,13 +17,14 @@
 <div class="pkp_notification">
     <div class="notifyWarning">
         {translate key="Plugin youtubeBlock. Para compartilhar um vídeo na página da revista
-			é necessário copiar o link do video do youtube e colar na aba de link:"}
+			é necessário copiar o link do video do youtube e colar na aba de link. Acesse o vídeo no Youtube, clique em compartilhar,
+            incorporar e copiar."}
             </div>
         </div>
 		{fbvFormSection title="Se julgar necessário, dê um título para o vídeo:"}
 			{fbvElement type="text" id="titulo" value=$titulo}
 		{/fbvFormSection}
-		{fbvFormSection title="Cole o link do vídeo aqui:"}
+		{fbvFormSection title="Cole o link de incorporação do vídeo aqui:"}
 			{fbvElement type="text" id="link" value=$link}
             
 		{/fbvFormSection}
@@ -31,18 +32,7 @@
 			{fbvElement type="text" id="descricao" value=$descricao}
 		{/fbvFormSection}
 					
-		{fbvFormSection title="Largura:"}
-		<div class="notifyWarning">
-        {translate key="O recomendado é entre 240 e 360"}
-            </div>
-			{fbvElement type="text" id="width" value=$width}
-		{/fbvFormSection}
-		{fbvFormSection title="altura:"}
-				<div class="notifyWarning">
-        {translate key="O recomendado é entre 142 e 210"}
-            </div>
-			{fbvElement type="text" id="height" value=$height}
-		{/fbvFormSection}
+		
 		
     {/fbvFormArea}
     {fbvFormButtons submitText="common.save"}

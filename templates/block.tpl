@@ -2,7 +2,7 @@
   <link rel="stylesheet" type="text/css" href="/plugins/blocks/youtubeBlock/templates/css/block.css">
   <span class="titulo">
     <b>
-      <h2>{$titulo|unescape:"html"}:</h2>
+      <b>{$titulo|unescape:"html"}</b>
     </b>
   </span>
 
